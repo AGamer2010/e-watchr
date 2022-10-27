@@ -1,0 +1,40 @@
+:root{
+    --principal: #007FFF;
+    --bgcolor: #303030;
+    --text: #EEEEEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgcolor);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--principal);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    margin-left: 5px;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+header nav a:hover{
+    color: #FFF;
+}
