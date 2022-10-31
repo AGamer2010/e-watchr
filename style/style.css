@@ -56,11 +56,11 @@ header nav a:hover{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/resources/Worlds_2022.png');
 
-    height: 400px;
-    width: calc(400px*1.625);
+    height: 600px;
+    /*width: calc(600px*1.625);*/
 
-    background-size: auto 100%;
-    background-repeat: no-repeat;
+/*    background-size: auto 100%;*/
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -94,4 +94,17 @@ header nav a:hover{
 
 .botao i {
     margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.campeonato-principal .container{
+    width: 70%;
+}
+.box-campeonato{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
