@@ -32,7 +32,7 @@
         </div>
     </header>
     <main>
-        <div class="campeonato-principal">
+        <div class="campeonatoPrincipal">
             <div class="titulo">
                 <h3 class="title">Worlds 22</h3>
                 <p class="descrição">O Campeonato Mundial da Temporada de 2022 (Worlds 2022) é a conclusão da temporada de esports de League of Legends de 2022, sendo realizado na América do Norte.
@@ -42,7 +42,7 @@
                         <i class="fa-solid fa-play"></i>
                         Assistir stream
                     </button>
-                    <button role="button" class="botao" onclick="windowOpen('https://liquipedia.net/leagueoflegends/World_Championship/2022')" >
+                    <button role="button" class="botao" id="idTitulo" onclick="overlay(this.id, 'on')" >
                         <i class="fa-solid fa-circle-info"></i>
                         Mais informações
                     </button>
@@ -51,37 +51,271 @@
         </div>
     </main>
 
-    <div class="carrosel-campeonatos">
+    <div class="carroselCampeonatos">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-campeonato" src="resources/mini1.jpg" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini1.jpg" alt="" srcset="" id="idMini1" onclick="overlay(this.id, 'on')">
             </div>
             <div class="item">
-                <img class="box-campeonato" src="resources/mini2.png" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini2.png" alt="" srcset="" id="idMini2" onclick="overlay(this.id, 'on')">
             </div>
             <div class="item">
-                <img class="box-campeonato" src="resources/mini3.png" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini3.png" alt="" srcset="" id="idMini3" onclick="overlay(this.id, 'on')">
             </div>
             <div class="item">
-                <img class="box-campeonato" src="resources/mini4.png" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini4.png" alt="" srcset="" id="idMini4" onclick="overlay(this.id, 'on')">
             </div>
             <div class="item">
-                <img class="box-campeonato" src="resources/mini5.jpg" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini5.jpg" alt="" srcset="" id="idMini5" onclick="overlay(this.id, 'on')">
             </div>
             <div class="item">
-                <img class="box-campeonato" src="resources/mini6.png" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini6.png" alt="" srcset="" id="idMini6" onclick="overlay(this.id, 'on')">
             </div>
             <div class="item">
-                <img class="box-campeonato" src="resources/mini7.png" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini7.png" alt="" srcset="" id="idMini7" onclick="overlay(this.id, 'on')">
             </div>
             <div class="item">
-                <img class="box-campeonato" src="resources/mini8.jpg" alt="" srcset="">
+                <img class="boxCampeonato" src="resources/mini8.jpg" alt="" srcset="" id="idMini8" onclick="overlay(this.id, 'on')">
             </div>
         </div>
     </div>
 
+    <!-- Overlays-->
+
+    <div id="ovTitulo">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay">Worlds 22</h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idTitulo', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                        O Campeonato Mundial de 2022 é o evento de coroação dos esports de League of Legends do ano. O torneio recebe 24 equipes de todas as regiões do jogo em uma corrida de meses pela Summoner's Cup. 
+                        <br>
+                        O Mundial deste ano receberá 24 equipes de todo o mundo. Infelizmente, a LCL não poderá enviar um representante para o Mundial 2022. A vaga da LCL será concedida à região que teve o melhor desempenho em eventos internacionais nos últimos dois anos, mas ainda não possui 4 vagas para equipes: Europa.
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen('https://liquipedia.net/leagueoflegends/World_Championship/2022'))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="ovMini1">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay">Intel Extreme Masters</h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini1', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                        O Challengers Stage e o Legends Stage também acontecerão com a presença do público! Com a mudança, as duas primeiras fases acontecerão no Anfiteatro do Riocentro durante 8 dias. Assim, a experiência do público aumentou de 4 para 12 dias completos de Major. Além disso, o Gaules e a Tribonera também serão parte da experiência in loco. O Challengers Stage acontecerá de 31 de Outubro a 3 de Novembro, enquanto o Legends Stage tem data marcada para acontecer entre os dias 5 e 8 de Novembro.
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen('https://liquipedia.net/counterstrike/Intel_Extreme_Masters/2022/Rio'))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="ovMini2">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay">Hearthstone Masters Tour</h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini2', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                        Masters Tour: Maw and Disorder, o sexto e último Masters Tour de 2022, reúne os melhores jogadores de Hearthstone de todo o mundo para competir por sua parte do prêmio de US$ 250.000 e pelo título de Masters Tour: Maw and Disorder Champion.
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen('https://liquipedia.net/hearthstone/Masters_Tour_2022_Maw_%26_Disorder'))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="ovMini3">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay">Rocket League Championship Series 2021-22</h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini3', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                        A RLCS 2021-22 é a segunda temporada da RLCS em 2021, passando para 2022. Esta temporada apresenta as mudanças mais importantes no sistema RLCS ainda com mais regiões e um formato atualizado. 3 divisões - outono, inverno, primavera - cada uma com 3 eventos regionais que levam a um grande internacional. Dentro de todos esses eventos, cada equipe coletou pontos que determinaram se eles se classificariam para o Campeonato Mundial ou o Wildcard do Campeonato Mundial.
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen('https://liquipedia.net/rocketleague/Rocket_League_Championship_Series/2021-22'))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="ovMini4">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay"></h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini4', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                        A LoL Championship Series (coloquialmente conhecida como LCS) é a liga franqueada norte-americana da Riot Games. Formalmente conhecida como NA LCS antes do rebranding da EU LCS como LEC em 2019, a liga foi lançada em 2013 como a principal competição de League of Legends na América do Norte.
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen('https://liquipedia.net/leagueoflegends/LCS/2022/Summer'))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <div id="ovMini5">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay"></h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen(''))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="ovMini6">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay"></h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen(''))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="ovMini7">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay"></h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen(''))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="ovMini8">
+        <div class="overlay">           
+            <header>
+                <div class="container">
+                    <h3 class="tituloOverlay"></h3>
+                    <i class="fa-regular fa-circle-xmark" onclick="overlay('idMini', 'off')"></i>
+                </div>    
+            </header>
+            <main>
+                <div class="container">
+                    <p>
+                    </p>
+                    <button role="button" class="botao" onclick="overlay(windowOpen(''))" >
+                        Acessar mais informações
+                        <!-- Ícone em SVG-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="siteExterno" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
      <!-- Ícones -->
-     <script src="https://kit.fontawesome.com/5b114bce19.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/7ec43ff034.js" crossorigin="anonymous"></script>
     
      <!-- Owl Carousel-->
     <script src="js/owl/jquery.min.js"></script>

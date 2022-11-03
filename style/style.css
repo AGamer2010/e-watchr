@@ -16,9 +16,13 @@ body{
     background-color: var(--bgcolor);
     font-family: 'Open Sans', sans-serif;
     color: var(--text);
+    font-size: 20px;
 }
 
+
 /*
+Código não usado de brilho
+
 header{
     border-bottom: 0px solid var(--principal);
     box-shadow: 0px 0px 20px 10px var(--principal);
@@ -52,7 +56,7 @@ header nav a:hover{
 
 /* Campeonato em destaque */
 
-.campeonato-principal{
+.campeonatoPrincipal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/resources/Worlds_2022.png');
 
@@ -68,7 +72,7 @@ header nav a:hover{
     align-items: flex-start;
 }
 
-.campeonato-principal .descrição{
+.campeonatoPrincipal .descrição{
     margin-bottom: 90px;
 }
 
@@ -100,11 +104,198 @@ header nav a:hover{
     margin-left: 20px;
 }
 
-.campeonato-principal .container{
+.campeonatoPrincipal .container{
     width: 70%;
 }
-.box-campeonato{
+.boxCampeonato{
     width: 100%;
     height: 100%;
-    display: block;
+    display: relative;
+}
+
+/* Overlays*/
+
+.overlay{
+    position: absolute;
+
+    width: 80%;
+    height: 90%;
+
+    border: 1px solid var(--principal);
+    border-radius: 5px;
+
+    background-color: #303030;
+
+    z-index: 3;
+
+    top: 0;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+
+    margin-top: 10px;
+
+    overflow: auto;
+}
+
+.overlay .container{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.fa-circle-xmark{
+font-size: 24px;
+}
+
+#ovTitulo{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini1{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini2{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini3{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini4{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini5{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini6{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini7{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+#ovMini8{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 3;
+    justify-content: center;
+}
+
+.overlay p {
+    width: 70%;
+}
+
+.overlay button{
+    margin-top: 10px;
+}
+
+
+
+
+/* OwlCarousel so por favor fica debaixo do overlay pelamordedeus*/
+
+.carroselCampeonatos{
+    display: fixed;
+    z-index: 1;
 }
