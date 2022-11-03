@@ -127,6 +127,6 @@ function overlay(id, trigger){
                     document.getElementById("ovMini8").style.display = "none"
                     console.log(id + trigger)
             }
-            brea3
+            break
     }
 }
